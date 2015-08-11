@@ -84,6 +84,7 @@ class kibana4 (
   $service_ensure              = $kibana4::params::service_ensure,
   $service_enable              = $kibana4::params::service_enable,
   $service_name                = $kibana4::params::service_name,
+  $use_systemd                 = $kibana4::params::use_systemd,
   $manage_user                 = $kibana4::params::manage_user,
   $kibana4_group               = $kibana4::params::kibana4_group,
   $kibana4_gid                 = $kibana4::params::kibana4_gid,
