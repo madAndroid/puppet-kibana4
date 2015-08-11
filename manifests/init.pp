@@ -105,6 +105,8 @@ class kibana4 (
   $ssl_key_file                = $kibana4::params::ssl_key_file,
   $ssl_cert_file               = $kibana4::params::ssl_cert_file,
   $pid_file                    = $kibana4::params::pid_file,
+  $log_path                    = $kibana4::params::log_path,
+  $log_file                    = $kibana4::params::log_file,
   $bundled_plugin_ids          = $kibana4::params::bundled_plugin_ids,
 ) inherits kibana4::params {
 

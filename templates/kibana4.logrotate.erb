@@ -1,0 +1,13 @@
+<%= scope.lookupvar('kibana4::log_path') %>/*.log {
+    daily
+    missingok
+    rotate 52
+    compress
+    delaycompress
+    notifempty
+    create 640 <%= scope.lookupvar('kibana4::kibana4_user') %> <%= scope.lookupvar('kibana4::kibana4_group') %>
+    sharedscripts
+    postrotate
+        systemctl restart kibana
+    endscript
+}
