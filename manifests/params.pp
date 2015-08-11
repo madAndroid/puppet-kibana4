@@ -33,6 +33,9 @@ class kibana4::params {
   $ssl_key_file                = '/path/to/your/server.key'
   $ssl_cert_file               = '/path/to/your/server.crt'
   $pid_file                    = '/var/run/kibana.pid'
+  $log_path                    = '/var/log/kibana'
+  $log_file                    = "${log_path}/kibana.log"
+
   $bundled_plugin_ids          = [
     'plugins/dashboard/index','plugins/discover/index',
     'plugins/doc/index','plugins/kibana/index',
